@@ -1,1 +1,3 @@
-export default function checkbox() { return null; }
+export default function checkbox() {
+  return <input type="checkbox" defaultChecked className="checkbox" />;
+}

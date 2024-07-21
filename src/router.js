@@ -1,3 +1,5 @@
+import Dashboard from "./pages/Dashboard";
+
 import {
     createRoutesFromElements,
     createBrowserRouter,
@@ -14,7 +16,7 @@ import {
   )
 
 function HomePage() {
-    return <p>React Router Is Working</p>
+    return <Dashboard />
 }
 
 export default router;
