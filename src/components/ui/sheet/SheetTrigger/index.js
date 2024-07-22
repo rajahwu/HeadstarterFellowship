@@ -1,1 +1,1 @@
-export default function SheetTrigger() { return null; }
+export default function SheetTrigger({ children }) { return <>{children}</>; }
