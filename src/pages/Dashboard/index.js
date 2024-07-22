@@ -1,8 +1,7 @@
 // src/pages/Dashboard.js
 
 import React from 'react';
-import BaseLayout from '../../components/layouts/Base';
-import Header from '../../components/ui/header';
+import { BaseLayout, Header } from '../../components/layouts';
 import Card from '../../components/ui/card/Card';
 import { Link } from 'react-router-dom';
 

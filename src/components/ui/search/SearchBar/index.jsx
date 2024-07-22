@@ -3,7 +3,8 @@ import React from 'react';
 import Input from '../../input';
 import { Search as SearchIcon } from 'lucide-react';
 
-export function Search() {
+export default function SearchBar() {
+   
   return (
     <form className="ml-auto flex-1 sm:flex-initial">
       <div className="relative">
