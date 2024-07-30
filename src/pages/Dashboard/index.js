@@ -1,9 +1,8 @@
-// src/pages/Dashboard.js
-
 import React from 'react';
 import { BaseLayout, Header } from '../../components/layouts';
 import Card from '../../components/ui/card/Card';
 import { Link } from 'react-router-dom';
+import { TypewriterEffect, TypewriterEffectSmooth } from '../../components/effects';
 
 const cardData = [
   {
@@ -24,12 +23,33 @@ const cardData = [
   // Add more objects as needed for testing
 ];
 
+ const words = [
+    {
+      text: "Vincent",
+    },
+    {
+      text: "Radford,",
+    },
+    {
+      text: "awesome",
+    },
+    {
+      text: "Web",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "Developer.",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
+
 export default function Dashboard() {
   return (
     <BaseLayout> 
       <Header />
       <main className="flex min-h-[calc(100vh_-_theme(spacing.16))] flex-1 flex-col gap-4 bg-muted/40 p-4 md:gap-8 md:p-10">
         <div className="mx-auto grid w-full max-w-6xl gap-2">
+          <TypewriterEffectSmooth words={words} />
           <h1 className="text-3xl font-semibold">Settings</h1>
         </div>
         <div className="mx-auto grid w-full max-w-6xl items-start gap-6 md:grid-cols-[180px_1fr] lg:grid-cols-[250px_1fr]">
